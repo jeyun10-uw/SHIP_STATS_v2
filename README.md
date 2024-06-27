@@ -1,0 +1,2 @@
+# SHIP_STATS_v2
+Affected files from UWSAM which calculates the environmental accumulation mode aerosol (NAc) on the edges of the domain (controlled by edge_frac) while the LES is running. This differs from the old version which used the background aerosol before the injection began to determine the presence of a ship track. The environmental NAc is updated at each statistics call and used to determine if a column is in the ship track or not and provides more flexibility for environments where the background aerosol may be changing considerably.  

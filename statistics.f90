@@ -813,12 +813,6 @@ real :: relhobs(nzm)
                    endif
                 enddo
 
-                if(masterproc) then 
-                   print*, 'dz =', z_diff1(:)
-                   print*, 'shifted z grid =', z_grid1(:)
-                   print*, 'non-shifted z grid =', z(:)
-                endif
-
                 !compute inversion base column-by-column
                  der_temp = 0.
                  height_inv(:,:) = 0

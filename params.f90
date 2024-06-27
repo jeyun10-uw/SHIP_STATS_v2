@@ -119,7 +119,7 @@ logical:: doseawater = .true. !bloss(Set UW default to true!!) .false.
 
 !mcmic: hyperdiffusion for large grid spacing runs in hopes of damping TKE
 !and decreasing excessive entrainment
-logical:: doMomentumHyperviscosity = .true. !switch here to turn on/off
+logical:: doMomentumHyperviscosity = .false. !switch here to turn on/off
 real:: tau_MomentumHyperviscosity = 1200. !time scale for damping (seconds)
 
 ! Specify solar constant and zenith angle for perpetual insolation.

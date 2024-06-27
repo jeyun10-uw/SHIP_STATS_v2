@@ -23,9 +23,9 @@ module micro_params
         dosubgridw = .false., &      ! input estimate of subgrid w to microphysics
         doarcticicenucl = .false., & ! use arctic parameter values for ice nucleation
         docloudedgeactivation = .false., & ! activate cloud droplets throughout the cloud
-        do_env_nc_within_plume = .true., & !mcmic: option to apply env. NC to ship plume for autoconv/accretion
-        do_env_sed_within_plume = .true., & !mcmic: option to apply env. NC to cloud drop sed. to plume
-        do_env_effc_within_plume = .true. !mcmic: option to apply env. NC in cloud eff. rad. calc. in plume
+        do_env_nc_within_plume = .false., & !mcmic: option to apply env. NC to ship plume for autoconv/accretion
+        do_env_sed_within_plume = .false., & !mcmic: option to apply env. NC to cloud drop sed. to plume
+        do_env_effc_within_plume = .false. !mcmic: option to apply env. NC in cloud eff. rad. calc. in plume
 
   !bloss (from brnr): add prognostic aerosol functionality and other options
   logical, public :: &

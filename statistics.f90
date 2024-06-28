@@ -805,7 +805,7 @@ real :: relhobs(nzm)
                 !compute dz
                 do k = 1,nzm
                    if (k.eq.1) then
-                      z_diff1(k) = z(1)
+                      z_diff1(k) = z_grid1(1)
                       T_diff(:,:,k) = 0.
                    else
                       z_diff1(k) = z(k) - z(k-1)

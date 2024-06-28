@@ -808,7 +808,7 @@ real :: relhobs(nzm)
                       z_diff1(k) = z_grid1(1)
                       T_diff(:,:,k) = 0.
                    else
-                      z_diff1(k) = z(k) - z(k-1)
+                      z_diff1(k) = z_grid1(k) - z_grid1(k-1)
                       T_diff(:,:,k) = T_shift(:,:,k) - T_shift(:,:,k-1)
                    endif
                 enddo

@@ -967,9 +967,11 @@ real :: relhobs(nzm)
                 do i = 1,nx
                    do j = 1,ny
                       if (height_inv(i,j).ne.0) then 
+		         z_tot = SUM(z_diff1(1:height_inv(i,j)))
                          do k = 1,height_inv(i,j)
+			    z_fraction = z_diff(k) / z_tot
                             aero_xy(i,j) = Accumaero(i,j,k)
-                            aero_xy_col(i,j) = aero_xy_col(i,j) + aero_xy(i,j)*(z_diff1(k)/z(height_inv(i,j)))
+                            aero_xy_col(i,j) = aero_xy_col(i,j) + aero_xy(i,j)*z_fraction
                          enddo
                       endif
                    enddo
